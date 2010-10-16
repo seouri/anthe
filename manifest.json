@@ -1,0 +1,26 @@
+{
+  "name" : "Anthe - Master of Articles",
+  "version" : "0.1",
+  "description" : "Master of Articles (a, an, the)",
+  "background_page" : "background.html",
+  "page_action" :
+  {
+    "default_icon" : "icon16.png",
+    "default_title" : "Start the quiz!"
+  },
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js" : ["jquery.min.js", "contentscript.js"],
+      "run_at" : "document_idle",
+      "all_frames" : true
+    }
+  ],
+  "icons" : {
+    "48" : "icon48.png",
+    "128" : "icon128.png"
+  }
+}
