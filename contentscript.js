@@ -11,5 +11,10 @@
 
 $(document).ready(function() {
   chrome.extension.sendRequest({}, function(response) {});
-  $('body *').replaceText(/([\s^])(the|a|an) /ig, '$1<span class="anthe">$2</span> ');
+  chrome.extension.onRequest.addListener(
+    function(request, sender, sendResponse) {
+      if (request.action == "hide") {
+        $('body *').replaceText(/([\s^])(the|a|an) /ig, '$1<span class="anthe">$2</span> ');
+      }
+    });
 });
