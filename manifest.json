@@ -1,11 +1,11 @@
 {
   "name" : "Anthe - Master of Articles",
-  "version" : "0.2",
+  "version" : "0.4",
   "description" : "Replaces all 'a', 'an', or 'the' in any page with blank.",
   "background_page" : "background.html",
   "page_action" :
   {
-    "default_icon" : "icon16.png",
+    "default_icon" : "anthe16-off.png",
     "default_title" : "Start the quiz!"
   },
   "content_scripts" : [
@@ -21,7 +21,8 @@
     }
   ],
   "icons" : {
-    "48" : "icon48.png",
-    "128" : "icon128.png"
+    "16" : "anthe16.png",
+    "48" : "anthe48.png",
+    "128" : "anthe128.png"
   }
 }
