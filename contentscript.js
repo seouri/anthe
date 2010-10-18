@@ -11,5 +11,5 @@
 
 $(document).ready(function() {
   chrome.extension.sendRequest({}, function(response) {});
-  $('body *').replaceText(/([\s^])(the|a|an) /ig, '$1<span style="display: inline-block; width: 2em; margin:0; padding: 0; border: 2px solid #ccc; background-color: #fff; color: #fff; text-align: center">$2</span> ');
+  $('body *').replaceText(/([\s^])(the|a|an) /ig, '$1<span class="anthe">$2</span> ');
 });
