@@ -1,6 +1,6 @@
 {
   "name" : "Anthe - Master of Articles",
-  "version" : "0.4.3",
+  "version" : "0.4.4",
   "description" : "Replaces all 'a', 'an', or 'the' in any page with blank.",
   "background_page" : "background.html",
   "page_action" :
