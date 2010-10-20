@@ -11,7 +11,7 @@
 
 var quiz_switch = false;
 $(document).ready(function() {
-  if (window.location.href.match(/^http:\/\/twitter.com/) == null) {
+  if (window.location.href.match(/^http:\/\/(twitter|www\.youtube).com/) == null) {
     chrome.extension.sendRequest({}, function(response) {});
     $('body *').replaceText(/(\W|^)(the|a|an) /ig, '$1<span class="anthe">$2</span> ');
   }
